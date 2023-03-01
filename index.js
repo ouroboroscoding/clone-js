@@ -93,6 +93,8 @@ export default function clone(o) {
             for (const k of Object.keys(o)) {
                 oclone[k] = clone(o[k]);
             }
+            // Return the new copy
+            return oclone;
         }
     }
     // Else, return as is
